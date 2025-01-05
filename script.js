@@ -1,14 +1,17 @@
 const templates = [
-    "Draw a {adjective} {animal} riding a {object}.",
-    "Sketch a {adjective} {object} that looks like it's {verb}",
-    "Draw a {animal} on a {object} eating a {food} while {verb}."
+    "Draw a {adjective} {animal} riding a {object} in front of the {location}.",
+    "Sketch a {adjective} {object} that looks like it's {verb} at the {location}",
+    "Draw a {animal} on a {object} eating a {food} while {verb}.",
+    "Sketch a {adjective} {food} that is {verb}.",
+    "Draw a {adjective} {animal} with their friend a {adjective} {animal}, {verb} at the {location}. "
   ];
   const words = {
     adjective: ["funny", "angry", "giant", "tiny"],
     animal: ["cat", "dog", "elephant", "dragon", "bunny", "octopus", "flamingo","sloth"],
-    object: ["bicycle", "spaceship", "toaster", "tree"],
-    verb: ["dancing", "flying", "singing", "crying"],
-    food: ["hamburger", "cheese", "salad", "icecream"]
+    object: ["bicycle", "spaceship", "toaster", "tree", "cloud", "camera", "paintbrush","teddy bear"],
+    verb: ["dancing", "flying", "singing", "crying", "painting", "running","swimming", "dancing"],
+    food: ["hamburger", "cheese", "salad", "icecream"],
+    location: ["park", "castle", "office", "coffee shop", "mall", "city"]
   };
   
   function generatePrompt() {
